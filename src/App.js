@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+const Hello = ({ name, number}) => {
+  return <p>Hello {name}, {number}</p>;
+};
 
-function App() {
+const App = () => {
+  const num1 = 1;
+  const num2 = 2;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Hello name="Kok Sing" number={num1} />
+      <Hello name="Joann" number={num1} />
+      <Hello name="GUG" number={num1} />
+
+      <p>
+        {num1} + {num2} = {num1 + num2}
+      </p>
+    </>
   );
-}
+};
 
 export default App;
