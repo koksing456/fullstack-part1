@@ -7,7 +7,7 @@ const App = () => {
   const num2 = 2;
   return (
     <>
-      <Hello name="Kok Sing" number={num1} />
+      <Hello name="Kok Sing" number={num2} />
       <Hello name="Joann" number={num1} />
       <Hello name="GUG" number={num1} />
 
