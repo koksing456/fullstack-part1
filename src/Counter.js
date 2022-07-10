@@ -1,8 +1,5 @@
 import { useState } from "react";
-
-const Button = ({ label, onClick }) => {
-  return <button onClick={onClick}>{label}</button>;
-};
+import Button from "./components/Button";
 
 const Display = ({ count }) => {
   return <p>Counter: {count}</p>;

@@ -1,23 +1,8 @@
 import { useState } from "react";
+import Button from './components/Button'
+import Title from './components/Title'
+import Result from './components/Result'
 
-const Title = ({ titleText }) => {
-  return <h1>{titleText}</h1>;
-};
-
-const Button = ({ label, onClick }) => {
-  return <button onClick={onClick}>{label}</button>;
-};
-
-const Result = ({ feedbackText, number }) => {
-  return (
-    <tbody>
-      <tr>
-        <td>{feedbackText}</td>
-        <td>{number}</td>
-      </tr>
-    </tbody>
-  );
-};
 
 const Statistics = (props) => {
   const { good, bad, neutral, goodText, badText, neutralText } = props;

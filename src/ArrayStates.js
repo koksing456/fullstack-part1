@@ -1,16 +1,6 @@
 import { useState } from "react";
-
-const Button = ({ label, onClick }) => {
-    return <button onClick={onClick}>{label}</button>;
-  };
-
-  const History = (props) => {
-    console.log(props);
-    if(props.allClick.length === 0)
-        return <div>click any buttons to start</div>
-    
-    return <div>All CLick - {props.allClick}</div>
-  }
+import Button from './components/Button'
+import History from "./components/History";
 
 const ArrayState = () => {
   const [left, setLeft] = useState(0);
